@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.jocile.dscatalog.dto.CategoryDTO;
 import com.jocile.dscatalog.entities.Category;
 import com.jocile.dscatalog.repositories.CategoryRepository;
+import com.jocile.dscatalog.services.exceptions.ResourceNotFoundException;
 
 @Service
 public class CategoryService {
@@ -27,7 +28,7 @@ public class CategoryService {
   @Transactional(readOnly = true)
   public CategoryDTO findById(Long id) {
     Optional<Category> obj = repository.findById(id);
-    Category entity = obj.get();
+    Category entity = obj.orElseThrow(() -> new ResourceNotFoundException("Entity not found"));
     return new CategoryDTO(entity);
   }
 }
