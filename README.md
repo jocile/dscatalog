@@ -4,7 +4,7 @@
 
 <!-- Status -->
 
-## 🚧  DSCatalog 🚀 Under construction...  🚧
+## 🚧 DSCatalog 🚀 Em construção ...  🚧
 
 ![Github top language](https://img.shields.io/github/languages/top/jocile/catalog?color=56BEB8)
 ![Github language count](https://img.shields.io/github/languages/count/jocile/catalog?color=56BEB8)
@@ -16,100 +16,111 @@
 
 <!-- Menu -->
 
-[About](#dart-about) | [Features](#sparkles-features) | [Technologies](#rocket-technologie) | [Requirements](#white_check_mark-requirements) | [Starting](#checkered_flag-starting) | [See the documentation on wiki](https://github.com/jocile/dscatalog/wiki) | [License](#memo-licens) | [Author](https://github.com/acenelio)
+[Sobre](#dart-sobre) | [Recursos](#sparkles-recursos) | [Tecnologias](#rocket-tecnologias) | [Requisitos](#white_check_mark-requisitos) | [Iniciando](#checkered_flag-iniciando) | [Documentação](https://github.com/jocile/dscatalog/wiki) | [Licença](#page_facing_up-licença) | [Autor](#construction_worker-autor)
 
-## :dart: About
+## :dart: Sobre
 
-Product catalog system using spring boot as backend and react as frontend, which is developed in [DevSuperior](https://devsuperior.com.br/) course bootcamp.
+Sistema de catálogo de produtos usando Spring Boot no backend e React no frontend, desenvolvido no bootcamp do curso [DevSuperior](https://devsuperior.com.br/).
 
-## :sparkles: Features
+## :sparkles: Recursos
 
-- Product catalog screen with pagination;
-- Product detail screen;
-- Interface for listing, inserting, editing and deleting records.
-- Security with data validation, authentication and authorization access;
-- CRUD Database access for products, categories and users;
-- Automated tests;
-- Cloud Services Platforms;
+- Tela de detalhes do produto;
+- Tela de catálogo de produtos com paginação;
+- Interface para listar, inserir, editar e excluir registros.
+- Segurança com validação de dados, autenticação e controle de autorização;
+- Acesso ao banco de dados CRUD para produtos, categorias e usuários;
+- Testes automatizados;
 
-## :rocket: Technologies
+## :rocket: Tecnologias
 
-The following tools were used in this project:
+As seguintes ferramentas foram usadas neste projeto:
 
-- [Java JDK 17](https://docs.oracle.com/en/java/javase/17/);
+- [Java JDK](https://docs.oracle.com/en/java/javase/);
   - [Maven builder](https://maven.apache.org/);
   - [Spring Boot framework](https://glysns.gitbook.io/springframework/);
   - [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.5.6/reference/htmlsingle/#boot-features-jpa-and-spring-data);
-- [H2 in-memory database](https://www.h2database.com/);
-- [Postgresql 12 database](https://www.postgresql.org/about/news/postgresql-12-released-1976/);
-  - [PgAdmin database administration platform](https://www.pgadmin.org/);
-- [ReactJS user interfaces](https://pt-br.reactjs.org/);
-  - [Yarn - package management](https://yarnpkg.com/);
-  - [React Native](https://reactnative.dev/);
+- [Banco de dados em memória H2](https://www.h2database.com/);
+- [Banco de dados Postgresql](https://www.postgresql.org);
+  - [Plataforma de administração de banco de dados PgAdmin](https://www.pgadmin.org/);
+- [Interfaces de usuário ReactJS](https://pt-br.reactjs.org/);
+  - [Gerenciamento de pacotes - Yarn](https://yarnpkg.com/);
   - [TypeScript](https://www.typescriptlang.org/);
   - [Bootstrap web framework](https://getbootstrap.com/);
-- [Netlify web app server](https://www.netlify.com/);
-- [Heroku - plataform as a service](https://www.heroku.com/);
-- [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html);
 
-## :white_check_mark: Requirements
+## :white_check_mark: Requisitos
 
-Before starting :checkered_flag:, you need to have [Java JDK 17](https://www.oracle.com/java/technologies/downloads/#java17), [Git](https://git-scm.com) and [Maven](https://maven.apache.org/install.html) installed.
+Antes de começar :checkered_flag:, é necessário ter instalados:
 
-## :checkered_flag: Starting
+- Backend:
+  - [Java JDK](https://www.oracle.com/java/technologies/downloads/);
+  - [Git](https://git-scm.com)
+  - [Maven](https://maven.apache.org/install.html).
+- Frontend web:
+  - [NodeJS](https://nodejs.org/en);
+  - [Yarn](https://classic.yarnpkg.com/en/docs/install)
 
-> Clone this project
+## :checkered_flag: Iniciando
+
+> Clone este projeto
 
 ```bash
 git clone https://github.com/jocile/dscatalog
 ```
 
-> Access
+### :zap: Backend
+
+> Accesse a pasta do backend
 
 ```bash
 cd dscatalog/backend
 ```
 
-> Run the project back-end
+> Execute o backend do projeto
 
 ```bash
 ./mvnw spring-boot:run
 ```
 
-> The back-end API will initialize in the browser: <http://localhost:8080/>
+> A API será iniciado no navegador: <http://localhost:8080/>\
+> O banco de dados H2 será inicializado no navegador: <http://localhost:8080/h2-console>
 
 <!-- Swagger-ui
 > The backend API will initialize in the browser: <http://localhost:8080/swagger-ui/index.html>\
-> and in-memory database H2 will be initialized in <http://localhost:8080/h2-console>
 -->
 
-> 🚧 The front-end is 🚀 Under construction... 🚧
+### :art: Frontend
 
-> Access
+🚧 O front-end está 🚀 em construção... 🚧
 
-```bash
-$ cd catalog/frontend
-```
-
-> Install dependencies
+> Access a pasta do frontend
 
 ```bash
-$ yarn
+cd catalog/frontend
 ```
 
-> Run the project frontend
+> Instalando as dependencias
 
 ```bash
-$ yarn start
+yarn
 ```
 
-> The local frontend server will initialize in the browser: <http://localhost:3000/>\
-> and Dashboard URL route will be initialized in: <http://localhost:3000/dashboard>
+> Execute o frontend
 
-## :memo: License
+```bash
+yarn start
+```
 
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+> O servidor frontend local será iniciado no navegador: <http://localhost:3000/>\
+> e a rota URL do Dashboard será iniciada em: <http://localhost:3000/dashboard>\
+> A página será recarregada se você fizer edições.\
+> Você também verá quaisquer erros de lint no console.
 
-Made with :heart: by [Jocilé](https://github.com/jocile)
+## :page_facing_up: Licença
 
-[Back to top](#dscatalog)
+Este projeto está sob a licença MIT. Para mais detalhes, consulte o arquivo [LICENSE](LICENSE.md).
+
+## :construction_worker: Autor
+
+Feito com :heart: por [Jocilé](https://github.com/jocile) seguindo o curso [Devsuperior](https://github.com/devsuperior) do Dr. [Nélio Alves](https://github.com/acenelio)
+
+[Voltar ao topo](#dscatalog)
